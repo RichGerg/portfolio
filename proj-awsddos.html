@@ -13,9 +13,10 @@
 
     <link href="assets/css/plugins.css" rel="stylesheet"/>
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
-<body class="dsn-ajax bg-dots dsn-cursor-effect">
+<body class="v-light bg-dots dsn-ajax">
 
 
 <div id="dsn_preloader" class="preloader">
@@ -149,154 +150,142 @@
     <!-- ========== End Menu ========== -->
 
 
-
-    <!-- ========== Header Normal========== -->
-    <header id="dsn_header" class="dsn-header-animation header-normal">
-        <div class="background-overlay bg-pattern p-absolute left-0 top-0 w-100 h-100"></div>
-
+    <!-- ========== Header  ========== -->
+    <header id="dsn_header" class="dsn-header-animation  dsn-full-header v-dark-head">
         <div class="entry-header p-relative over-hidden">
-
-            <div id="hero_content"
-                 class="d-flex p-relative h-100 dsn-hero-parallax-title dsn-container align-items-center pb-section ">
+            <div id="hero_image"
+                 class="p-absolute dsn-hero-parallax-img over-hidden before-z-index z-index-1 full-width"
+                 data-dsn-ajax="img" data-overlay="6">
+                <img src="assets/img/proj/proj-awsddos3.jpg"
+                     class="cover-bg-img transform-3d " alt=""
+                     data-dsn-position="50% 50%"
+                     sizes="(max-width: 2560px) 100vw, 2560px"/>
+            </div>
+            <div id="hero_content" class="d-flex p-relative h-100 dsn-hero-parallax-title align-items-end container">
                 <div class="content p-relative ">
                     <div class="intro-project w-100">
                         <div class="intro-title ">
+                            <div id="dsn_metas" class="p-relative d-flex justify-content-between ">
+                                <div class="metas has-separate p-relative mb-10">
+                                    <span>Cloud</span>
+                                </div>
+                            </div>
+                            <div id="hero_title">
+                                <h1 class="title text-upper" data-dsn-ajax="title">AWS Website &amp; DDOS Alert</h1>
+                            </div>
 
-                            <div id="hero_title" class="mt-20">
-                                <h1 class="title text-upper">Welcome to <br>Phishy.Cloud</h1>
-                            </div>
-                            <p class="mt-20 max-w570">
-                                A mix of cybersecurity &amp; cloud projects, coding scripts, and other digital pursuits by Rich Gergely.
-                            </p>
-                            <div class="dsn-def-btn dsn-hover-icon dsn-icon-heading-color mt-20 d-flex">
-                                <a class="dsn-btn dsn-border border-color-default  background-section effect-ajax has-icon-left"
-                                   href="portfolio.html" data-dsn-text="View Projects">
-                                    <span class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                        <i class="fas fa-angle-right" aria-hidden="true"></i>
-                                    </span>
-                                    <span class="title-btn p-relative  z-index-1 ">VIEW PROJECTS</span>
-                                </a>
-                            </div>
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </header>
-    <!-- ========== End Header Normal ========== -->
+    <!-- ========== End Header  ========== -->
 
     <div id="page_wrapper" class="wrapper">
 
-        <!-- ========== Portfolio ========== -->
-        <div class="p-relative section-margin dsn-container">
-            <div class="p-relative dsn-style-metro box-image-parallax dsn-background-inherit dsn-metro-2 box-image-transform ">
-                <div class="root-posts has-filter">
-
-                    <div class="dsn-posts dsn-post-type-metro d-grid grid-lg-3 grid-md-2  dsn-isotope use-filter" data-dsn-gap="80px 30px">
-
-                        <article
-                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image production">
-                            <div class="box-content d-flex ">
-                                <a class="effect-ajax box-image-link bg-shadow" href="proj-soc1.html"
-                                   data-dsn-ajax="work" title="HEADPHONES">
-                                    <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                         data-overlay="4">
-                                        <img class="cover-bg-img" src="assets/img/proj/proj-soc.jpg"
-                                             alt=""/>
-                                    </div>
-                                </a>
-                                <div class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                    <div class="post-title-info">
-                                        <div class="post-meta max-w750">
-                                            <div class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                <span data-separator="&">Presentation</span>
-                                            </div>
-                                        </div>
-                                        <h2 class="post-title title-h2">
-                                            <a href="proj-soc1.html" class="effect-ajax"
-                                               data-dsn-ajax="work">
-                                                A DAY IN A SOC
-                                            </a>
-                                        </h2>
-                                    </div>
+        <div class="root-blog">
+            <div class="container ">
+                <div class="dsn-posts">
 
 
+                    <div class="news-content mt-section">
+                        <div class="news-content-inner">
+
+                            <div class="post-content">
+                                <p>
+                                    <a>Objective</a><br>
+                                    Host a personal cybersecurity website using GitHub and AWS, and implement a DDOS attack alert system.
+                                </p>
+
+                                <p>
+                                    <a>Introduction</a><br>
+                                    Phishy.Cloud was created as a platform to showcase my cybersecurity and cloud projects. To make it accessible and secure, I decided to leverage GitHub and AWS services. This project outlines the process of hosting the website using GitHub, deploying it on AWS Amplify, and implementing an alert system for detecting DDOS attacks.
+                                </p>
+
+                                <img class="w-100" src="assets/img/proj/mock1.jpg" alt="">
+
+                                <p>
+                                    <a>Tools &amp; Technologies Used</a><br>
+                                    GitHub, AWS Amplify, AWS CloudWatch, ApacheBench (ab), Bash, Linux, DNS, VPN
+									
+                                </p>
+                                <p>
+                                    <a>Implementation</a><br>
+                                    <em>1. Website Content and GitHub:</em><br> 
+									I created and uploaded the website files to GitHub, ensuring that the content properly represented my cybersecurity and cloud projects.<br><br>
+
+									<em>2. AWS Account and Amplify:</em><br>
+									I signed up for an AWS account and utilized AWS Amplify to connect to my GitHub repository. This integration allowed me to seamlessly deploy and host the website on AWS infrastructure.<br><br>
+
+									<em>3. DNS Configuration:</em><br>
+									To point the Phishy.Cloud domain to AWS, I updated the DNS settings in the Google Domain Manager to route traffic to the AWS Amplify hosting.<br><br>
+
+									<em>4. DDOS Alert Setup:</em><br>
+									Defining what constitutes a DDOS attack, I configured an alert system using AWS CloudWatch. This involved setting appropriate metrics and thresholds to trigger an alert when suspicious traffic patterns resembling a DDOS attack were detected.<br><br>
+
+									<em>5. Testing the DDOS Alert:</em><br>
+									I installed ApacheBench (ab) on my virtual machine (VM) and performed a load test on the Phishy.Cloud website to simulate a DDOS attack. This allowed me to verify the effectiveness of the alert system.<br><br>
+
+									<em>6. Alert Notification:</em><br>
+									As expected, AWS CloudWatch generated an email notification and displayed the alert in the CloudWatch dashboard. This confirmed that the DDOS alert system was successfully detecting and responding to potential attacks.
+                              </p>
+
+								<img class="w-100" src="assets/img/proj/mock2.jpg" alt="">
+								
+                                <p>
+                                    <a>Challenges &amp; Lessons Learned</a><br>
+                                    Throughout the implementation process, I faced a few challenges while working with AWS. However, I discovered that AWS offers extensive resources and documentation that proved invaluable in navigating these obstacles. The official documentation provided a solid foundation, while external sources and internet searches offered additional insights and guidance, enhancing my understanding of the AWS ecosystem.
+                                </p>
+
+                                <p>
+                                    <a>Conclusion</a><br>
+                                    By hosting my personal cybersecurity website using GitHub and AWS services, I gained valuable insights into the capabilities offered by AWS for hosting websites and applications. This case study provided hands-on experience with GitHub integration, AWS Amplify deployment, and the implementation of a DDOS alert system.
+<br><br>
+Moving forward, the next steps include setting up a Web Application Firewall (WAF) in AWS and configuring custom rules to automatically block IP addresses involved in DDOS attacks or brute force logins. This will further enhance the security and resilience of Phishy.Cloud against potential threats.
+									
+                                </p>
+
+                                <div class="post-tags p-relative">
+                                    <!-- <a class="fz-16"
+                                       href="#">
+                                        <span class="post_tag post_tag">Blog</span>
+                                    </a>
+                                    <a class="fz-16" href="#">
+                                        <span class="post_tag post_tag">Creative</span>
+                                    </a> -->
                                 </div>
+
                             </div>
 
+                            <!-- <div class="pagination-post d-flex align-items-center border-style border-radius mt-section">
 
-                        </article>
-                        <article
-                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image production photography">
-                            <div class="box-content d-flex ">
-                                <a class="effect-ajax box-image-link bg-shadow" href="proj-script1.html"
-                                   data-dsn-ajax="work" title="DOG CHOW">
-                                    <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                         data-overlay="3">
-                                        <img class="cover-bg-img" src="assets/img/proj/proj-bruteforce.jpg"
-                                             alt=""/>
-                                    </div>
-                                </a>
-                                <div class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                    <div class="post-title-info">
-                                        <div class="post-meta max-w750">
-                                            <div class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                <span data-separator=" & ">Script</span>
-                                            </div>
-                                        </div>
-                                        <h2 class="post-title title-h2">
-                                            <a href="proj-script1.html" class="effect-ajax"
-                                               data-dsn-ajax="work">
-                                                BRUTE FORCE &amp; UFW
-                                            </a>
-                                        </h2>
-                                    </div>
+                                <div class="pagination-item w-100 p-20"><a
+                                        href="https://dsngrid.com/blackdsn/2022/06/11/create-the-bestworkplace/"><span
+                                        class="mb-5">PREVIOUS</span><h4 class="title-block word-wrap">Create the
+                                    bestworkplace</h4></a></div>
 
-
+                                <div class="icon p-20 border-right border-left">
+                                    <a class="h-100 heading-color" href="#">
+                                        <i class="fas fa-th-large" aria-hidden="true"></i>
+                                    </a>
                                 </div>
-                            </div>
-
-
-                        </article>
-                        <article
-                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image production">
-                            <div class="box-content d-flex ">
-                                <a class="effect-ajax box-image-link bg-shadow" href="proj-awsddos.html"
-                                   data-dsn-ajax="work" title="OPEN RUN">
-                                    <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                         data-overlay="2">
-                                        <img class="cover-bg-img" src="assets/img/proj/proj-awsddos.jpg"
-                                             alt=""/>
-                                    </div>
-                                </a>
-                                <div class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                    <div class="post-title-info">
-                                        <div class="post-meta max-w750">
-                                            <div class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                <span data-separator=" & ">Cloud</span>
-                                            </div>
-                                        </div>
-                                        <h2 class="post-title title-h2">
-                                            <a href="proj-awsddos.html" class="effect-ajax"
-                                               data-dsn-ajax="work">
-                                                AWS Website &amp; DDOS Alert
-                                            </a>
-                                        </h2>
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-
-                        </article>
-
-
+                                <div class="pagination-item w-100 p-20 text-right"><a
+                                        href="https://dsngrid.com/blackdsn/2022/06/11/soul-artwork-from-lizzy/"><span
+                                        class="mb-5">NEXT</span><h4 class="title-block word-wrap">Soul Artwork from
+                                    Lizzy</h4></a></div>
+                            </div> -->
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
-        <!-- ========== End Portfolio ========== -->
 
 
         <!-- ========== Footer ========== -->
@@ -395,9 +384,11 @@
             </div>
         </footer>
         <!-- ========== End Footer ========== -->
-    </div>
-</main>
 
+    </div>
+
+
+</main>
 
 <!-- ========== Cursor ========== -->
 <div id="dsn_cursor" class="ball"></div>
@@ -410,8 +401,8 @@
 
     <ul class="socials d-flex flex-column-reverse">
         <li style="--dsn-index-animate : 3;">
-            <a href="#0" target="_blank" rel="nofollow">
-                <i class="fab fa-linkedin-in" aria-hidden="true"></i><span>Linkedin</span>
+            <a href="https://www.linkedin.com/in/richgerg/" target="_blank" rel="nofollow">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span>
             </a>
         </li>
     </ul>

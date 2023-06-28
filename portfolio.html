@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="dsn-ajax bg-dots dsn-cursor-effect">
+<body class="v-light dsn-ajax dsn-cursor-effect">
 
 
 <div id="dsn_preloader" class="preloader">
@@ -149,32 +149,31 @@
     <!-- ========== End Menu ========== -->
 
 
-
     <!-- ========== Header Normal========== -->
-    <header id="dsn_header" class="dsn-header-animation header-normal">
+    <header id="dsn_header" class="dsn-header-animation header-normal ">
         <div class="background-overlay bg-pattern p-absolute left-0 top-0 w-100 h-100"></div>
 
         <div class="entry-header p-relative over-hidden">
 
             <div id="hero_content"
-                 class="d-flex p-relative h-100 dsn-hero-parallax-title dsn-container align-items-center pb-section ">
+                 class="d-flex p-relative h-100 dsn-hero-parallax-title container align-items-center pb-section ">
                 <div class="content p-relative ">
                     <div class="intro-project w-100">
                         <div class="intro-title ">
 
                             <div id="hero_title" class="mt-20">
-                                <h1 class="title text-upper">Welcome to <br>Phishy.Cloud</h1>
+                                <h1 class="title text-upper">Portfolio </h1>
                             </div>
                             <p class="mt-20 max-w570">
-                                A mix of cybersecurity &amp; cloud projects, coding scripts, and other digital pursuits by Rich Gergely.
+                                A collection of cybersecurity &amp; cloud projects, coding scripts and other digital pursuits.
                             </p>
                             <div class="dsn-def-btn dsn-hover-icon dsn-icon-heading-color mt-20 d-flex">
                                 <a class="dsn-btn dsn-border border-color-default  background-section effect-ajax has-icon-left"
-                                   href="portfolio.html" data-dsn-text="View Projects">
+                                   href="about.html" data-dsn-text="About Rich">
                                     <span class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
                                         <i class="fas fa-angle-right" aria-hidden="true"></i>
                                     </span>
-                                    <span class="title-btn p-relative  z-index-1 ">VIEW PROJECTS</span>
+                                    <span class="title-btn p-relative  z-index-1 ">About Rich</span>
                                 </a>
                             </div>
                         </div>
@@ -188,20 +187,43 @@
     <div id="page_wrapper" class="wrapper">
 
         <!-- ========== Portfolio ========== -->
-        <div class="p-relative section-margin dsn-container">
-            <div class="p-relative dsn-style-metro box-image-parallax dsn-background-inherit dsn-metro-2 box-image-transform ">
+        <div class="p-relative section-margin container">
+            <div class="p-relative box-image-parallax dsn-style-cards">
                 <div class="root-posts has-filter">
 
-                    <div class="dsn-posts dsn-post-type-metro d-grid grid-lg-3 grid-md-2  dsn-isotope use-filter" data-dsn-gap="80px 30px">
+                    <!-- <div class="dsn-filtering z-index-1 p-relative w-100 mb-50">
+                        <div class="filtering-t">
+                            <div class="filtering-wrap">
+                                <h5 class="filter-title">
+                                    AWESOME DESIGNS </h5>
+                                <div class="filtering">
+                                    <button class="active" data-filter="*" type="button">
+                                        All
+                                    </button>
+                                    <button type="button" class="dsn-filter-category-production"
+                                            data-filter=".production , .category-production">
+                                        Production
+                                    </button>
+                                    <button type="button" class="dsn-filter-category-photography"
+                                            data-filter=".photography , .category-photography">
+                                        Photography
+                                    </button>
+                                    <button type="button" class="sm-title-block dsn-filter-category-creative"
+                                            data-filter=".creative , .category-creative">CREATIVE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="dsn-posts dsn-post-type-cards box-image-normal d-grid grid-md-2  dsn-isotope use-filter v-dark-head" data-dsn-gap="60px">
 
-                        <article
-                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image production">
+                        <article class="dsn-item-post grid-item over-hidden p-relative box-hover-image production">
                             <div class="box-content d-flex ">
                                 <a class="effect-ajax box-image-link bg-shadow" href="proj-soc1.html"
-                                   data-dsn-ajax="work" title="HEADPHONES">
+                                   data-dsn-ajax="work" title="SOC Presentation">
                                     <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
                                          data-overlay="4">
-                                        <img class="cover-bg-img" src="assets/img/proj/proj-soc.jpg"
+                                        <img class="cover-bg-img" src="assets/img/proj/proj-soc2.jpg"
                                              alt=""/>
                                     </div>
                                 </a>
@@ -212,28 +234,36 @@
                                                 <span data-separator="&">Presentation</span>
                                             </div>
                                         </div>
-                                        <h2 class="post-title title-h2">
+                                        <h2 class="post-title title-block">
                                             <a href="proj-soc1.html" class="effect-ajax"
                                                data-dsn-ajax="work">
-                                                A DAY IN A SOC
+                                                A Day in the Life of a SOC Analyst
                                             </a>
                                         </h2>
+                                        <p class="section_description mt-15 max-w570 ">
+                                            A final project as part of my Cybersecurity Analytics Program that showcased skills acquired from Red Team and Blue Team in an applicable Security Operations Center (SOC) setting
+                                        </p>
+                                        <a href="proj-soc1.html"
+                                           class="effect-ajax dsn-post-link move-circle border-color-heading"
+                                           data-dsn="parallax" data-dsn-ajax="work">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="arrow-after"
+                                                      d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
+                                            </svg>
+                                        </a>
                                     </div>
 
 
                                 </div>
                             </div>
-
-
                         </article>
-                        <article
-                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image production photography">
+                        <article class="dsn-item-post grid-item over-hidden p-relative box-hover-image production photography">
                             <div class="box-content d-flex ">
                                 <a class="effect-ajax box-image-link bg-shadow" href="proj-script1.html"
-                                   data-dsn-ajax="work" title="DOG CHOW">
+                                   data-dsn-ajax="work" title="Brute Force and UFW">
                                     <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
                                          data-overlay="3">
-                                        <img class="cover-bg-img" src="assets/img/proj/proj-bruteforce.jpg"
+                                        <img class="cover-bg-img" src="assets/img/proj/proj-bruteforce2.jpg"
                                              alt=""/>
                                     </div>
                                 </a>
@@ -241,15 +271,26 @@
                                     <div class="post-title-info">
                                         <div class="post-meta max-w750">
                                             <div class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                <span data-separator=" & ">Script</span>
+                                                <span data-separator=" & ">Coding Script</span>
                                             </div>
                                         </div>
-                                        <h2 class="post-title title-h2">
+                                        <h2 class="post-title title-block">
                                             <a href="proj-script1.html" class="effect-ajax"
                                                data-dsn-ajax="work">
-                                                BRUTE FORCE &amp; UFW
+                                                Brute Force &amp; UFW
                                             </a>
                                         </h2>
+                                        <p class="section_description mt-15 max-w570 ">
+                                            Inspired by my final Cybersecurity Analytics project, I wrote a script to detect brute force attacks and block the IP address in UFW (Uncomplicated Firewall)
+                                        </p>
+                                        <a href="proj-script1.html"
+                                           class="effect-ajax dsn-post-link move-circle border-color-heading"
+                                           data-dsn="parallax" data-dsn-ajax="work">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="arrow-after"
+                                                      d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
+                                            </svg>
+                                        </a>
                                     </div>
 
 
@@ -258,14 +299,13 @@
 
 
                         </article>
-                        <article
-                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image production">
+                        <article class="dsn-item-post grid-item over-hidden p-relative box-hover-image production">
                             <div class="box-content d-flex ">
                                 <a class="effect-ajax box-image-link bg-shadow" href="proj-awsddos.html"
-                                   data-dsn-ajax="work" title="OPEN RUN">
+                                   data-dsn-ajax="work" title="AWS and DDOS">
                                     <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
                                          data-overlay="2">
-                                        <img class="cover-bg-img" src="assets/img/proj/proj-awsddos.jpg"
+                                        <img class="cover-bg-img" src="assets/img/proj/proj-awsddos2.jpg"
                                              alt=""/>
                                     </div>
                                 </a>
@@ -276,12 +316,23 @@
                                                 <span data-separator=" & ">Cloud</span>
                                             </div>
                                         </div>
-                                        <h2 class="post-title title-h2">
+                                        <h2 class="post-title title-block">
                                             <a href="proj-awsddos.html" class="effect-ajax"
                                                data-dsn-ajax="work">
                                                 AWS Website &amp; DDOS Alert
                                             </a>
                                         </h2>
+                                        <p class="section_description mt-15 max-w570 ">
+                                            Configure this website (Phishy.Cloud) to fetch data from GitHub, host it on AWS, and generate DDOS alerts
+                                        </p>
+                                        <a href="proj-awsddos.html"
+                                           class="effect-ajax dsn-post-link move-circle border-color-heading"
+                                           data-dsn="parallax" data-dsn-ajax="work">
+                                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                                <path class="arrow-after"
+                                                      d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
+                                            </svg>
+                                        </a>
                                     </div>
 
 
@@ -290,6 +341,7 @@
 
 
                         </article>
+                        
 
 
                     </div>
@@ -398,7 +450,6 @@
     </div>
 </main>
 
-
 <!-- ========== Cursor ========== -->
 <div id="dsn_cursor" class="ball"></div>
 <div id="dsn_cursor_inner" class="ball"></div>
@@ -410,8 +461,8 @@
 
     <ul class="socials d-flex flex-column-reverse">
         <li style="--dsn-index-animate : 3;">
-            <a href="#0" target="_blank" rel="nofollow">
-                <i class="fab fa-linkedin-in" aria-hidden="true"></i><span>Linkedin</span>
+            <a href="https://www.linkedin.com/in/richgerg/" target="_blank" rel="nofollow">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span>
             </a>
         </li>
     </ul>

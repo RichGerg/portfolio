@@ -13,9 +13,10 @@
 
     <link href="assets/css/plugins.css" rel="stylesheet"/>
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
-<body class="dsn-ajax bg-dots dsn-cursor-effect">
+<body class="v-light bg-dots dsn-ajax">
 
 
 <div id="dsn_preloader" class="preloader">
@@ -149,154 +150,132 @@
     <!-- ========== End Menu ========== -->
 
 
-
-    <!-- ========== Header Normal========== -->
-    <header id="dsn_header" class="dsn-header-animation header-normal">
-        <div class="background-overlay bg-pattern p-absolute left-0 top-0 w-100 h-100"></div>
-
+    <!-- ========== Header  ========== -->
+    <header id="dsn_header" class="dsn-header-animation  dsn-full-header v-dark-head">
         <div class="entry-header p-relative over-hidden">
-
-            <div id="hero_content"
-                 class="d-flex p-relative h-100 dsn-hero-parallax-title dsn-container align-items-center pb-section ">
+            <div id="hero_image"
+                 class="p-absolute dsn-hero-parallax-img over-hidden before-z-index z-index-1 full-width"
+                 data-dsn-ajax="img" data-overlay="6">
+                <img src="assets/img/proj/proj-soc3.jpg"
+                     class="cover-bg-img transform-3d " alt=""
+                     data-dsn-position="50% 50%"
+                     sizes="(max-width: 2560px) 100vw, 2560px"/>
+            </div>
+            <div id="hero_content" class="d-flex p-relative h-100 dsn-hero-parallax-title align-items-end container">
                 <div class="content p-relative ">
                     <div class="intro-project w-100">
                         <div class="intro-title ">
+                            <div id="dsn_metas" class="p-relative d-flex justify-content-between ">
+                                <div class="metas has-separate p-relative mb-10">
+                                    <span>Presentation</span>
+                                </div>
+                            </div>
+                            <div id="hero_title">
+                                <h1 class="title text-upper" data-dsn-ajax="title">A Day in the Life of a SOC Analyst</h1>
+                            </div>
 
-                            <div id="hero_title" class="mt-20">
-                                <h1 class="title text-upper">Welcome to <br>Phishy.Cloud</h1>
-                            </div>
-                            <p class="mt-20 max-w570">
-                                A mix of cybersecurity &amp; cloud projects, coding scripts, and other digital pursuits by Rich Gergely.
-                            </p>
-                            <div class="dsn-def-btn dsn-hover-icon dsn-icon-heading-color mt-20 d-flex">
-                                <a class="dsn-btn dsn-border border-color-default  background-section effect-ajax has-icon-left"
-                                   href="portfolio.html" data-dsn-text="View Projects">
-                                    <span class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                        <i class="fas fa-angle-right" aria-hidden="true"></i>
-                                    </span>
-                                    <span class="title-btn p-relative  z-index-1 ">VIEW PROJECTS</span>
-                                </a>
-                            </div>
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </header>
-    <!-- ========== End Header Normal ========== -->
+    <!-- ========== End Header  ========== -->
 
     <div id="page_wrapper" class="wrapper">
 
-        <!-- ========== Portfolio ========== -->
-        <div class="p-relative section-margin dsn-container">
-            <div class="p-relative dsn-style-metro box-image-parallax dsn-background-inherit dsn-metro-2 box-image-transform ">
-                <div class="root-posts has-filter">
-
-                    <div class="dsn-posts dsn-post-type-metro d-grid grid-lg-3 grid-md-2  dsn-isotope use-filter" data-dsn-gap="80px 30px">
-
-                        <article
-                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image production">
-                            <div class="box-content d-flex ">
-                                <a class="effect-ajax box-image-link bg-shadow" href="proj-soc1.html"
-                                   data-dsn-ajax="work" title="HEADPHONES">
-                                    <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                         data-overlay="4">
-                                        <img class="cover-bg-img" src="assets/img/proj/proj-soc.jpg"
-                                             alt=""/>
-                                    </div>
-                                </a>
-                                <div class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                    <div class="post-title-info">
-                                        <div class="post-meta max-w750">
-                                            <div class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                <span data-separator="&">Presentation</span>
-                                            </div>
-                                        </div>
-                                        <h2 class="post-title title-h2">
-                                            <a href="proj-soc1.html" class="effect-ajax"
-                                               data-dsn-ajax="work">
-                                                A DAY IN A SOC
-                                            </a>
-                                        </h2>
-                                    </div>
+        <div class="root-blog">
+            <div class="container ">
+                <div class="dsn-posts">
 
 
+                    <div class="news-content mt-section">
+                        <div class="news-content-inner">
+
+                            <div class="post-content">
+                                <p>
+                                    <a>Objective</a><br>
+                                    The objective of this project was to create a comprehensive showcase of the skills learned during the Cybersecurity Analytics Program, replicating challenges faced by Cybersecurity Analysts.
+									<br><br>
+								The entire project presentation can be viewed by <a href="https://docs.google.com/presentation/d/1zmR21SsMgcwMEKM-BJReEe1EprRT7MDnwi6ujyg10i0/edit?usp=sharing">clicking here</a>. </p>
+
+                                <p>
+                                    <a>Introduction</a><br>
+                                    The project aimed to cover a wide range of cybersecurity aspects, encompassing red team and blue team methodologies, network security, incident response, threat intelligence, vulnerability assessment, risk management, and more.
+                                </p>
+
+                                <p>
+                                    <a>Tools &amp; Technologies Used</a><br>
+                                    Nmap, Hydra, SSH, Network Logging, SCP/SFTP, UFW, Iptables, Password Policy, User Management, and VM Setup.
+									
+                                </p>
+								
+                                <img class="w-100" src="assets/img/proj/mock3.jpg" alt="">
+								
+                                <p>
+                                    <a>Implementation</a><br>
+                                    We decided to execute a scenario simulating a Security Operations Center (SOC) team's response to a reported incident. To do this, we set up two virtual machines representing the attacker and victim systems. We planned and executed an attack on the victim, identifying vulnerabilities and compromising sensitive account information. As members of the blue team, we then analyzed and mitigated the situation, providing recommendations to prevent future attacks.
+                                </p>
+
+                                <p>
+                                    <a>Challenges &amp; Lessons Learned</a><br>
+                                    During the project, we encountered challenges such as difficulties with intentionally using an outdated Linux VM as the victim machine. We faced hurdles while setting up and implementing SSH logging, UFW Firewalls, and other components. As a result, we decided to switch to a newer version of the Linux VM to overcome these obstacles.
+									<br><br>
+									By adapting and finding solutions to these challenges, we gained valuable insights and learned important lessons about the practical application of cybersecurity concepts and techniques.
+                                </p>
+
+                                <img class="w-100" src="assets/img/proj/mock4.jpg" alt="">
+
+                                <p>
+                                    <a>Conclusion</a><br>
+                                    Our project successfully showcased the skills acquired during the Cybersecurity Analytics Program. We covered various cybersecurity aspects, including red team and blue team methodologies, network security, incident response, threat intelligence, vulnerability assessment, and risk management.
+<br><br>
+By utilizing tools like Nmap, Hydra, SSH, and Network Logging, we simulated a Security Operations Center's response to an incident. This involved setting up virtual machines for the attacker and victim systems, executing an attack, and analyzing and mitigating the situation as the blue team. Final recommendations aimed to improve future security measures.
+<br><br>
+We gained insights into the complexities of the cybersecurity field, enhancing our readiness to tackle real-world challenges as aspiring professionals.
+									
+                                </p>
+
+                                <div class="post-tags p-relative">
+                                    <!-- <a class="fz-16"
+                                       href="#">
+                                        <span class="post_tag post_tag">Blog</span>
+                                    </a>
+                                    <a class="fz-16" href="#">
+                                        <span class="post_tag post_tag">Creative</span>
+                                    </a> -->
                                 </div>
+
                             </div>
 
+                            <!-- <div class="pagination-post d-flex align-items-center border-style border-radius mt-section">
 
-                        </article>
-                        <article
-                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image production photography">
-                            <div class="box-content d-flex ">
-                                <a class="effect-ajax box-image-link bg-shadow" href="proj-script1.html"
-                                   data-dsn-ajax="work" title="DOG CHOW">
-                                    <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                         data-overlay="3">
-                                        <img class="cover-bg-img" src="assets/img/proj/proj-bruteforce.jpg"
-                                             alt=""/>
-                                    </div>
-                                </a>
-                                <div class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                    <div class="post-title-info">
-                                        <div class="post-meta max-w750">
-                                            <div class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                <span data-separator=" & ">Script</span>
-                                            </div>
-                                        </div>
-                                        <h2 class="post-title title-h2">
-                                            <a href="proj-script1.html" class="effect-ajax"
-                                               data-dsn-ajax="work">
-                                                BRUTE FORCE &amp; UFW
-                                            </a>
-                                        </h2>
-                                    </div>
+                                <div class="pagination-item w-100 p-20"><a
+                                        href="https://dsngrid.com/blackdsn/2022/06/11/create-the-bestworkplace/"><span
+                                        class="mb-5">PREVIOUS</span><h4 class="title-block word-wrap">Create the
+                                    bestworkplace</h4></a></div>
 
-
+                                <div class="icon p-20 border-right border-left">
+                                    <a class="h-100 heading-color" href="#">
+                                        <i class="fas fa-th-large" aria-hidden="true"></i>
+                                    </a>
                                 </div>
-                            </div>
-
-
-                        </article>
-                        <article
-                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image production">
-                            <div class="box-content d-flex ">
-                                <a class="effect-ajax box-image-link bg-shadow" href="proj-awsddos.html"
-                                   data-dsn-ajax="work" title="OPEN RUN">
-                                    <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                         data-overlay="2">
-                                        <img class="cover-bg-img" src="assets/img/proj/proj-awsddos.jpg"
-                                             alt=""/>
-                                    </div>
-                                </a>
-                                <div class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                    <div class="post-title-info">
-                                        <div class="post-meta max-w750">
-                                            <div class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                <span data-separator=" & ">Cloud</span>
-                                            </div>
-                                        </div>
-                                        <h2 class="post-title title-h2">
-                                            <a href="proj-awsddos.html" class="effect-ajax"
-                                               data-dsn-ajax="work">
-                                                AWS Website &amp; DDOS Alert
-                                            </a>
-                                        </h2>
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-
-                        </article>
-
-
+                                <div class="pagination-item w-100 p-20 text-right"><a
+                                        href="https://dsngrid.com/blackdsn/2022/06/11/soul-artwork-from-lizzy/"><span
+                                        class="mb-5">NEXT</span><h4 class="title-block word-wrap">Soul Artwork from
+                                    Lizzy</h4></a></div>
+                            </div> -->
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
-        <!-- ========== End Portfolio ========== -->
 
 
         <!-- ========== Footer ========== -->
@@ -395,9 +374,11 @@
             </div>
         </footer>
         <!-- ========== End Footer ========== -->
-    </div>
-</main>
 
+    </div>
+
+
+</main>
 
 <!-- ========== Cursor ========== -->
 <div id="dsn_cursor" class="ball"></div>
@@ -410,8 +391,8 @@
 
     <ul class="socials d-flex flex-column-reverse">
         <li style="--dsn-index-animate : 3;">
-            <a href="#0" target="_blank" rel="nofollow">
-                <i class="fab fa-linkedin-in" aria-hidden="true"></i><span>Linkedin</span>
+            <a href="https://www.linkedin.com/in/richgerg/" target="_blank" rel="nofollow">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span>
             </a>
         </li>
     </ul>

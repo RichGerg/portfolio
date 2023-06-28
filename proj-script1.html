@@ -13,9 +13,10 @@
 
     <link href="assets/css/plugins.css" rel="stylesheet"/>
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
-<body class="dsn-ajax bg-dots dsn-cursor-effect">
+<body class="v-light bg-dots dsn-ajax">
 
 
 <div id="dsn_preloader" class="preloader">
@@ -149,154 +150,155 @@
     <!-- ========== End Menu ========== -->
 
 
-
-    <!-- ========== Header Normal========== -->
-    <header id="dsn_header" class="dsn-header-animation header-normal">
-        <div class="background-overlay bg-pattern p-absolute left-0 top-0 w-100 h-100"></div>
-
+    <!-- ========== Header  ========== -->
+    <header id="dsn_header" class="dsn-header-animation  dsn-full-header v-dark-head">
         <div class="entry-header p-relative over-hidden">
-
-            <div id="hero_content"
-                 class="d-flex p-relative h-100 dsn-hero-parallax-title dsn-container align-items-center pb-section ">
+            <div id="hero_image"
+                 class="p-absolute dsn-hero-parallax-img over-hidden before-z-index z-index-1 full-width"
+                 data-dsn-ajax="img" data-overlay="6">
+                <img src="assets/img/proj/proj-bruteforce.jpg"
+                     class="cover-bg-img transform-3d " alt=""
+                     data-dsn-position="50% 50%"
+                     sizes="(max-width: 2560px) 100vw, 2560px"/>
+            </div>
+            <div id="hero_content" class="d-flex p-relative h-100 dsn-hero-parallax-title align-items-end container">
                 <div class="content p-relative ">
                     <div class="intro-project w-100">
                         <div class="intro-title ">
+                            <div id="dsn_metas" class="p-relative d-flex justify-content-between ">
+                                <div class="metas has-separate p-relative mb-10">
+                                    <span>Script</span>
+                                </div>
+                            </div>
+                            <div id="hero_title">
+                                <h1 class="title text-upper" data-dsn-ajax="title">Brute Force Detection &amp; UFW</h1>
+                            </div>
 
-                            <div id="hero_title" class="mt-20">
-                                <h1 class="title text-upper">Welcome to <br>Phishy.Cloud</h1>
-                            </div>
-                            <p class="mt-20 max-w570">
-                                A mix of cybersecurity &amp; cloud projects, coding scripts, and other digital pursuits by Rich Gergely.
-                            </p>
-                            <div class="dsn-def-btn dsn-hover-icon dsn-icon-heading-color mt-20 d-flex">
-                                <a class="dsn-btn dsn-border border-color-default  background-section effect-ajax has-icon-left"
-                                   href="portfolio.html" data-dsn-text="View Projects">
-                                    <span class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                        <i class="fas fa-angle-right" aria-hidden="true"></i>
-                                    </span>
-                                    <span class="title-btn p-relative  z-index-1 ">VIEW PROJECTS</span>
-                                </a>
-                            </div>
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </header>
-    <!-- ========== End Header Normal ========== -->
+    <!-- ========== End Header  ========== -->
 
     <div id="page_wrapper" class="wrapper">
 
-        <!-- ========== Portfolio ========== -->
-        <div class="p-relative section-margin dsn-container">
-            <div class="p-relative dsn-style-metro box-image-parallax dsn-background-inherit dsn-metro-2 box-image-transform ">
-                <div class="root-posts has-filter">
-
-                    <div class="dsn-posts dsn-post-type-metro d-grid grid-lg-3 grid-md-2  dsn-isotope use-filter" data-dsn-gap="80px 30px">
-
-                        <article
-                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image production">
-                            <div class="box-content d-flex ">
-                                <a class="effect-ajax box-image-link bg-shadow" href="proj-soc1.html"
-                                   data-dsn-ajax="work" title="HEADPHONES">
-                                    <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                         data-overlay="4">
-                                        <img class="cover-bg-img" src="assets/img/proj/proj-soc.jpg"
-                                             alt=""/>
-                                    </div>
-                                </a>
-                                <div class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                    <div class="post-title-info">
-                                        <div class="post-meta max-w750">
-                                            <div class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                <span data-separator="&">Presentation</span>
-                                            </div>
-                                        </div>
-                                        <h2 class="post-title title-h2">
-                                            <a href="proj-soc1.html" class="effect-ajax"
-                                               data-dsn-ajax="work">
-                                                A DAY IN A SOC
-                                            </a>
-                                        </h2>
-                                    </div>
+        <div class="root-blog">
+            <div class="container ">
+                <div class="dsn-posts">
 
 
+                    <div class="news-content mt-section">
+                        <div class="news-content-inner">
+
+                            <div class="post-content">
+                                <p>
+                                    <a>Objective</a><br>
+                                    The objective of this script is to detect and block brute force attacks targeting the SSH service by parsing the SSH log file (auth.log) and identifying IP addresses with multiple failed login attempts.
+                                </p>
+
+                                <p>
+                                    <a>Introduction</a><br>
+                                Inspired by my <a href="proj-soc1.html">final project</a>, this script was developed as a proactive measure to enhance security against brute force attacks on the SSH service. By analyzing the SSH log file, I identified suspicious patterns of multiple failed login attempts originating from the same IP address. The script then utilizes UFW (Uncomplicated Firewall) to block these IP addresses, preventing further unauthorized access attempts. </p>
+
+                                <p>
+                                    <a>Tools &amp; Technologies Used</a><br>
+                                    Bash, Linux, SSH, Network Logging, Brute Force Attacks, UFW, Iptables
+									
+                                </p>
+                                <p>
+                                    <a>Implementation</a><br>
+                                    The script begins by specifying the log file to be analyzed (auth.log). It uses awk to search for lines in the log file that match three defined requirements, specifically lines containing: the same exact timestamp, "Failed password," and an IP address. The matched lines are then processed further to extract the IP addresses.
+									<br><br>
+									Next, awk is used again to count the occurrences of each IP address. The script filters the IP addresses based on their count, considering only those with 10 or more occurrences. These filtered IP addresses are then blocked using UFW, with the script inserting deny rules for each IP address at the top of the firewall rules.
+                                </p>
+
+                                <blockquote class="wp-block-quote">
+                                    <p>
+                                        <strong>
+											    <br>
+												#!/bin/bash
+												<br><br>
+												log_file="auth.log"
+												<br><br>
+												<em># Use awk to search for lines matching the specified requirements in the log file</em><br>
+												matched_lines=$(awk '/[0-9]{2}:[0-9]{2}:[0-9]{2}.*Failed password.*[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+/ {match($0, /[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+/); print substr($0, RSTART, RLENGTH)}' "$log_file")
+												<br><br>
+											    <em># Use awk to count the occurrences of each IP address</em><br>
+												ip_counts=$(echo "$matched_lines" | awk '{ count[$0]++ } END { for (ip in count) print ip, count[ip] }')
+												<br><br>
+												<em># Filter the IP addresses based on count (10 or more occurrences)</em><br>
+												filtered_ip_addresses=$(echo "$ip_counts" | awk '$2 >= 10 { print $1 }')
+												<br><br>
+												<em># Block the filtered IP addresses using UFW</em><br>
+												echo "Blocking the following IP addresses with UFW:"<br>
+												while read -r ip_address; do<br>
+											    <span tab>sudo ufw insert 1 deny from "$ip_address"</span><br>
+												<span tab>echo "$ip_address"</span><br>
+												done <<< "$filtered_ip_addresses"<br>
+											    <br>
+                                        </strong>
+                                    </p>
+                                </blockquote>
+								
+                                <p>
+                                    <a>Challenges &amp; Lessons Learned</a><br>
+                                    One challenge encountered during the development of this script was distinguishing between brute force attacks and legitimate login failures. To address this, I established a criteria of 10 or more failed login attempts occurring within the same second, which I deemed as highly unlikely to be the result of normal human behavior.
+<br><br>
+Through testing and experimentation, I verified that the script successfully identified and blocked IP addresses associated with brute force attacks on the SSH service.
+                                </p>
+								
+								<img class="w-100" src="assets/img/proj/mock5.jpg" alt="">
+
+                                <p>
+                                    <a>Conclusion</a><br>
+                                    In conclusion, this script serves as an effective tool to detect and mitigate brute force attacks targeting the SSH service. By parsing the SSH log file and employing UFW to block malicious IP addresses, it enhances the security posture of the system and helps protect against unauthorized access attempts.
+<br><br>
+It is important to note that this script specifically targets SSH brute force attacks. To address other types of attacks or services utilizing different logs, additional scripts may be required to cover those scenarios.
+									
+                                </p>
+
+                                <div class="post-tags p-relative">
+                                    <!-- <a class="fz-16"
+                                       href="#">
+                                        <span class="post_tag post_tag">Blog</span>
+                                    </a>
+                                    <a class="fz-16" href="#">
+                                        <span class="post_tag post_tag">Creative</span>
+                                    </a> -->
                                 </div>
+
                             </div>
 
+                            <!-- <div class="pagination-post d-flex align-items-center border-style border-radius mt-section">
 
-                        </article>
-                        <article
-                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image production photography">
-                            <div class="box-content d-flex ">
-                                <a class="effect-ajax box-image-link bg-shadow" href="proj-script1.html"
-                                   data-dsn-ajax="work" title="DOG CHOW">
-                                    <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                         data-overlay="3">
-                                        <img class="cover-bg-img" src="assets/img/proj/proj-bruteforce.jpg"
-                                             alt=""/>
-                                    </div>
-                                </a>
-                                <div class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                    <div class="post-title-info">
-                                        <div class="post-meta max-w750">
-                                            <div class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                <span data-separator=" & ">Script</span>
-                                            </div>
-                                        </div>
-                                        <h2 class="post-title title-h2">
-                                            <a href="proj-script1.html" class="effect-ajax"
-                                               data-dsn-ajax="work">
-                                                BRUTE FORCE &amp; UFW
-                                            </a>
-                                        </h2>
-                                    </div>
+                                <div class="pagination-item w-100 p-20"><a
+                                        href="https://dsngrid.com/blackdsn/2022/06/11/create-the-bestworkplace/"><span
+                                        class="mb-5">PREVIOUS</span><h4 class="title-block word-wrap">Create the
+                                    bestworkplace</h4></a></div>
 
-
+                                <div class="icon p-20 border-right border-left">
+                                    <a class="h-100 heading-color" href="#">
+                                        <i class="fas fa-th-large" aria-hidden="true"></i>
+                                    </a>
                                 </div>
-                            </div>
-
-
-                        </article>
-                        <article
-                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image production">
-                            <div class="box-content d-flex ">
-                                <a class="effect-ajax box-image-link bg-shadow" href="proj-awsddos.html"
-                                   data-dsn-ajax="work" title="OPEN RUN">
-                                    <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                         data-overlay="2">
-                                        <img class="cover-bg-img" src="assets/img/proj/proj-awsddos.jpg"
-                                             alt=""/>
-                                    </div>
-                                </a>
-                                <div class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                    <div class="post-title-info">
-                                        <div class="post-meta max-w750">
-                                            <div class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                <span data-separator=" & ">Cloud</span>
-                                            </div>
-                                        </div>
-                                        <h2 class="post-title title-h2">
-                                            <a href="proj-awsddos.html" class="effect-ajax"
-                                               data-dsn-ajax="work">
-                                                AWS Website &amp; DDOS Alert
-                                            </a>
-                                        </h2>
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-
-                        </article>
-
-
+                                <div class="pagination-item w-100 p-20 text-right"><a
+                                        href="https://dsngrid.com/blackdsn/2022/06/11/soul-artwork-from-lizzy/"><span
+                                        class="mb-5">NEXT</span><h4 class="title-block word-wrap">Soul Artwork from
+                                    Lizzy</h4></a></div>
+                            </div> -->
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
-        <!-- ========== End Portfolio ========== -->
 
 
         <!-- ========== Footer ========== -->
@@ -395,9 +397,11 @@
             </div>
         </footer>
         <!-- ========== End Footer ========== -->
-    </div>
-</main>
 
+    </div>
+
+
+</main>
 
 <!-- ========== Cursor ========== -->
 <div id="dsn_cursor" class="ball"></div>
@@ -410,8 +414,8 @@
 
     <ul class="socials d-flex flex-column-reverse">
         <li style="--dsn-index-animate : 3;">
-            <a href="#0" target="_blank" rel="nofollow">
-                <i class="fab fa-linkedin-in" aria-hidden="true"></i><span>Linkedin</span>
+            <a href="https://www.linkedin.com/in/richgerg/" target="_blank" rel="nofollow">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i><span>LinkedIn</span>
             </a>
         </li>
     </ul>
